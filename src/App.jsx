@@ -9,7 +9,13 @@ import "./App.css";
 // import Index from "./lessons/08_子传父";
 // import Index from "./lessons/09_练习2";
 // import Index from "./lessons/09_练习1-子传父";
-import Index from "./lessons/10_插槽";
+// import Index from "./lessons/10_插槽";
+// import Index from "./lessons/11.context";
+// import Index from "./lessons/12_跨级的事件传递";
+// import Index from "./lessons/13_为何使用usestate";
+import Index from "./lessons/14_受控组件和非受控组件";
+
+
 // import { useState } from "react";
 function App() {
   // const [count, setcount] = useState(0);
@@ -18,7 +24,7 @@ function App() {
     <>
       <Learn_jsx></Learn_jsx>
       {/* {count} */}
-      <Index
+      {/* <Index
         leftSolt={<button>123</button>}
         center={(item)=> <button>{item}</button>}
         // addClick={(data) => {
@@ -27,7 +33,8 @@ function App() {
       >
         <button>按钮</button>
         <h2>我是标签</h2>
-        </Index>
+        </Index> */}
+        <Index></Index>
         
     </>
   );

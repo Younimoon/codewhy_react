@@ -3,7 +3,7 @@ import { useState } from "react";
 import Body from "./body";
 import "./index.css";
 export default function Index() {
-  const [header, setheader] = useState(["流行", "古代", "现代"]);
+  const [header] = useState(["流行", "古代", "现代"]);
   // //   let name = null
   //     let current = 0
   let [current, setCurrent] = useState(0);
