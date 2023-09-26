@@ -1,0 +1,10 @@
+td,th{
+    padding: 10px 16px;
+    border: 3px solid rgb(175, 165, 165);
+}
+table{
+    border-collapse: collapse;
+}
+button{
+    border: 1xp solid black;
+}
