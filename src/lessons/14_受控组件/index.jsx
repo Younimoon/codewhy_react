@@ -1,7 +1,7 @@
 // import React from "react";
 
 import React, { useState } from "react";
-
+import Options from "./options";
 const Index = () => {
   const [userinfo, setUserinfo] = useState({
     username: "",
@@ -52,56 +52,61 @@ const Index = () => {
     console.log(e.target.checked);
     // console.log(123);
   };
+  
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        用户名:
-        <input
-          name="username"
-          type="text"
-          value={userinfo.username}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        密码:
-        <input
-          type="password"
-          name="password"
-          value={userinfo.password}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        您的爱好：
-        {hoobies.map((item, index) => {
-          return (
-            <input
-              key={item.value}
-              type="checkbox"
-              name="sing"
-              checked={item.checked}
-              //   onChange={handleInputChange}
-            />
-          );
-          唱歌;
-        })}
-      </label>
-      <br />
-      <label>
-        <input
-          type="checkbox"
-          name="siAgree"
-          checked={userinfo.agreed}
-          onChange={handleInputChange}
-        />
-        同意协议
-      </label>
-      <br />
-      <button type="submit">登录</button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label>
+          用户名:
+          <input
+            name="username"
+            type="text"
+            value={userinfo.username}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          密码:
+          <input
+            type="password"
+            name="password"
+            value={userinfo.password}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          您的爱好：
+          {userinfo.hoobies.map((item, index) => {
+            return (
+              <table key={item.value}>
+                <input
+                  type="checkbox"
+                  name="sing"
+                  checked={item.checked}
+                  //   onChange={handleInputChange}
+                />
+                {item.text}
+              </table>
+            );
+          })}
+        </label>
+        <br />
+        <label>
+          <input
+            type="checkbox"
+            name="siAgree"
+            checked={userinfo.agreed}
+            onChange={handleInputChange}
+          />
+          同意协议
+        </label>
+        <br />
+        <button type="submit">登录</button>
+      </form>
+      <Options></Options>
+    </div>
   );
 };
 

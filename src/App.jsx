@@ -13,7 +13,11 @@ import "./App.css";
 // import Index from "./lessons/11.context";
 // import Index from "./lessons/12_跨级的事件传递";
 // import Index from "./lessons/13_为何使用usestate";
-import Index from "./lessons/14_受控组件和非受控组件";
+// import Index from "./lessons/14_受控组件";
+// import Index from "./lessons/15_非受控组件";
+// import Index from "./lessons/16_高阶组件";
+// import Index from "./lessons/16_高阶组件/index2";
+import Index from "./lessons/16_高阶组件/index3";
 
 
 // import { useState } from "react";
