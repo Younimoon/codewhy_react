@@ -1,0 +1,29 @@
+.show-appear {
+    transform: translateX(-150px);
+
+}
+.show-appear-active{
+    transform: translateX(0px);
+    transition:transform 2s ease ;
+}
+
+
+/* css动画进入时的样式名字 */
+.show-appear, .show-enter{
+    opacity: 0;
+
+}
+/* 完全进入的样式名 */
+.show-appear-active,.show-enter-active{
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+/* 结束前的样式名 */
+.show-exit{
+    opacity: 1;
+}
+/* 完全结束的样式名 */
+.show-exit-active{
+    opacity: 0;
+    transition: opacity 2s ease;
+}

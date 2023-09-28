@@ -1,5 +1,6 @@
 import Learn_jsx from "./lessons/01_jsx的学习";
 import "./App.css";
+// import './lessons/17_动画/index.css'
 // import Index from "./lessons/02事件传参";
 // import Index from "./lessons/03_条件渲染";
 // import Index from "./lessons/04_列表渲染";
@@ -17,7 +18,11 @@ import "./App.css";
 // import Index from "./lessons/15_非受控组件";
 // import Index from "./lessons/16_高阶组件";
 // import Index from "./lessons/16_高阶组件/index2";
-import Index from "./lessons/16_高阶组件/index3";
+// import Index from "./lessons/16_高阶组件/index3";
+// import Index from "./lessons/16_高阶组件/高阶组件的运用";
+// import Index from "./lessons/17_动画";
+// import Index from "./lessons/17_动画/swichTransition";
+import Index from "./lessons/17_动画/trmsitionGroup";
 
 
 // import { useState } from "react";
@@ -26,7 +31,7 @@ function App() {
   // 5个dom节点
   return (
     <>
-      <Learn_jsx></Learn_jsx>
+      {/* <Learn_jsx></Learn_jsx> */}
       {/* {count} */}
       {/* <Index
         leftSolt={<button>123</button>}
